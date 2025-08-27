@@ -1,1 +1,81 @@
-# Prosthetic-arm-using-OpenCV
+# Prosthetic-arm-using-OpenCV# 🦾 Prosthetic Arm using OpenCV & STM32
+
+A low-cost **prosthetic arm** project built using **STM32 microcontroller**, **PCA9685 PWM driver**, and **servo motors**, controlled via **hand gesture recognition with OpenCV**.  
+This project demonstrates how computer vision and embedded systems can work together to create affordable assistive technology.
+
+---
+
+## 📷 Demo
+![Prototype Image](images/prototype.jpg)  
+*(Add photo or GIF of your prosthetic arm here)*
+
+---
+
+## 🔧 Features
+- Real-time **gesture detection** using OpenCV (Python).  
+- **UART communication** between Raspberry Pi/PC and STM32.  
+- **Servo motor control** via PCA9685 (16-channel PWM).  
+- Modular design (easy to scale for more DOF).  
+- Affordable hardware (< INR 5000).  
+
+---
+
+## 🗂️ Repository Structure
+prosthetic-arm-opencv-stm32/
+│
+├── hardware/ # PCB schematics & design files
+│ ├── schematic.pdf
+│ ├── pcb.kicad_pcb
+│ └── bom.csv
+│
+├── firmware/ # STM32 Embedded C code
+│ ├── Core/
+│ ├── Drivers/
+│ └── main.c
+│
+├── vision/ # OpenCV Python scripts
+│ └── gesture_control.py
+│
+├── docs/ # Documentation & diagrams        
+│ └── system_architecture.png
+│
+├── images/ # Photos & GIFs
+│ └── prototype.jpg            
+│
+---
+
+## ⚙️ Hardware Components
+- **STM32F407 / STM32 Blue Pill (F103)** – Microcontroller.  
+- **PCA9685** – 16-channel PWM driver for servos.  
+- **Servo Motors** – SG90 / MG996R (depending on strength needed).  
+- **Raspberry Pi / PC** – Runs OpenCV for gesture recognition.  
+- **USB Camera / Pi Camera** – Captures hand gestures.  
+- Power Supply: 5V @ 2–3A.  
+
+---
+
+## 💻 Software & Tools
+- **STM32CubeIDE** → for STM32 firmware development.  
+- **OpenCV (Python)** → gesture recognition.  
+- **I2C & UART drivers** → for communication.  
+- **KiCad / EasyEDA** → circuit & PCB design.  
+
+---
+
+## 🚀 How It Works
+1. Camera captures **hand gesture** in real-time.  
+2. OpenCV classifies the gesture (e.g., fist, open hand, point).  
+3. Command is sent to STM32 over **UART**.  
+4. STM32 controls **servo motors** via **PCA9685**.  
+5. Prosthetic arm replicates the hand gesture.  
+
+![System Architecture](docs/system_architecture.png)
+
+---
+
+## 🛠️ Setup & Usage
+
+### 1️⃣ Clone the Repo
+```bash
+git clone https://github.com/username/prosthetic-arm-opencv-stm32.git
+cd prosthetic-arm-opencv-stm32
