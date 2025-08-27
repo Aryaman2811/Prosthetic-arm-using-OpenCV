@@ -6,8 +6,8 @@ This project demonstrates how computer vision and embedded systems can work toge
 ---
 
 ## 📷 Demo
-![Prototype Image](images/prototype.jpg)  
-*(Add photo or GIF of your prosthetic arm here)*
+![WhatsApp Image 2025-08-28 at 1 15 27 AM](https://github.com/user-attachments/assets/89916a01-60c6-41c2-94f8-f4af77b1f625)
+
 
 ---
 
@@ -69,7 +69,8 @@ prosthetic-arm-opencv-stm32/
 4. STM32 controls **servo motors** via **PCA9685**.  
 5. Prosthetic arm replicates the hand gesture.  
 
-![System Architecture](docs/system_architecture.png)
+![System Architecture]![WhatsApp Image 2025-08-28 at 1 23 39 AM](https://github.com/user-attachments/assets/984419bf-a30a-4458-a09d-67eaa1c629e0)
+
 
 ---
 
