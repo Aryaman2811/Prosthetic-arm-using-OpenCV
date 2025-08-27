@@ -23,25 +23,18 @@ This project demonstrates how computer vision and embedded systems can work toge
 ## 🗂️ Repository Structure
 prosthetic-arm-opencv-stm32/
 │
-├── hardware/ # PCB schematics & design files
-│ ├── schematic.pdf
-│ ├── pcb.kicad_pcb
-│ └── bom.csv
-│
-├── firmware/ # STM32 Embedded C code
-│ ├── Core/
-│ ├── Drivers/
+├── firmware/ # STM32 embedded firmware
+│ └── Core/
 │ └── main.c
 │
-├── vision/ # OpenCV Python scripts
+├── hardware/ # Schematics
+│ └── schematic.jpg
+│
+├── vision/ # OpenCV gesture recognition
 │ └── gesture_control.py
 │
-├── docs/ # Documentation & diagrams        
-│ └── system_architecture.png
-│
-├── images/ # Photos & GIFs
-│ └── prototype.jpg            
-│
+└── README.md # Project documentation
+
 ---
 
 ## ⚙️ Hardware Components
